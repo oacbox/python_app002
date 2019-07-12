@@ -54,7 +54,7 @@ ROOT_URLCONF = 'app_002.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/var/www/python_app002/app_002/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,7 +115,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "myfiles"),)
 
 
 
@@ -123,6 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "/var/www/python_app002/app_002/static"
+
 
 
 
