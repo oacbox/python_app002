@@ -5,10 +5,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="personal business website">
+  <meta name="author" content="Olmer Chavarria">
 
-  <title>Alex Chavarria's Portfolio</title>
+  <title>Alex Chavarria Sofware Developer</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,33 +23,27 @@
   background-size: cover;
             height: 100%;
 }  
-        .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #130D55;
-   color: white;
-   text-align: center;
-   padding-top: 15px;
-}
         body{
   min-height: 100%;
   background-color: rgba(193,221,242,0.7);
 }
         nav{
-   background-color: #011553;
+   background-color: rgba(1,21,83,0.7);
+   margin-top: 0px;
+   
 }
-	img{
+	    img{
    margin-top:15px;
    border-radius: 25px;
    border: 2px solid #000000; 
 }
+    .bcard{
+        background-color: rgba(1,21,83,0.7);
+    }
     </style>
 <body>
-
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark static-top">
+<nav class="navbar navbar-expand-lg navbar-dark static-top">
     <div class="container">
         <a class="navbar-brand" style="font-family: 'Great Vibes', cursive; font-size: 50px;" href="#">Alex Chavarria</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,15 +51,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="homeswitch">
+            <a class="nav-link" id="homelink" href="#">Home</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">About
-             <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
           </li>
           <li class="nav-item">
@@ -85,9 +77,9 @@
         
         <h2 class="mt-5">Alexander Chavarria</h2>
           <h3>Software Developer</h3>  
-        <p class="lead">Experienced software developer with fluency in web, mobile, and
+        <p class="lead">I specialize in building reliable web, mobile, and
           systems applications</p>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled" style="font-weight: bold">
           <li>Skills:</li>
           <li>Python and Django</li>
           <li>Html, CSS, javaScript,PHP,MySQL in Linux</li>
@@ -97,15 +89,49 @@
       </div>
     </div>
   </div>
+ <footer class="container">
+  <div class="row">
+    <div class="col">
+        <div class="card bcard mb-4 text-white">
+            <div class="card-body text-center">
+                <h5 class="card-title">Business Websites</h5>
+                <p class="card-text">I will help you create a professional website for your business</p>
+                <a href="#" class="card-link">Examples</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-5">
+        <div class="card bcard mb-4 text-white">
+            <div class="card-body text-center">
+                <h5 class="card-title">Free estimates</h5>
+                <p class="card-text">Feel free to call me directly at <a href="tel:2144998705">(214)499-8705</a>  or email me at:</p>
+                <a href="mailto: oacbox@gmail.com" class="card-link">oacbox@gmail.com"</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card bcard mb-4 text-white">
+            <div class="card-body text-center">
+                <h5 class="card-title">ECommerce</h5>
+                <p class="card-text">Sell services and products online</p>
+                <a href="#" class="card-link">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </footer>
   <!-- Bootstrap core JavaScript -->
     <script
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-</body>
-<div class="footer">
-  <h3 style="padding-top: 15px;">2019</h3>
-</div>
+    <script type="text/javascript">
     
+        $("#homelink").click(function(){
+            $("#homeswitch").addClass("active");
+        });
+    
+    </script>
+</body>    
 </html>
